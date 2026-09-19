@@ -3,48 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website - Home</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <h1>Personal Website</h1>
-    <p>Selamat datang di website pribadi saya.</p>
+    <div class="container">
 
-    <nav>
-        <a href="01-tugas.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="project.html">Project</a> |
-        <a href="kontak.html">Contact</a>
-    </nav>
+        <header>
+            <h1>Personal Website</h1>
+            <p style="text-align: center;">Selamat datang di website pribadi saya.</p>
+        </header>
 
-    <hr>
+        <nav class=" navbar">
+            <a href="01-tugas.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="kontak.html" class="nav-link">Contact</a>
+        </nav>
 
-    <h2>Halo, Saya Novela Andauri!</h2>
-    <img src="../assets/ovel.jpg" alt="Foto profil mahasiswa" width="240">
+        <hr>
 
-    <p>Saya adalah mahasiswa Program Studi Pendidikan Sistem dan Teknologi Informasi, Universitas
-        Pendidikan Indonesia Kampus Daerah Purwakarta, yang sedang belajar pengembangan web.
-        Website ini dibuat sebagai tugas mata kuliah Pemrograman Internet menggunakan HTML dasar tanpa CSS.</p>
+        <section class="profile-section">
+            <h2>Halo, Saya Novela Andauri!</h2>
+            <img src="../assets/ovel.jpg" alt="Foto profil mahasiswa" class="profile-img">
 
-    <p>Di website ini, Anda dapat mengenal saya lebih dekat, melihat beberapa project yang pernah saya kerjakan,
-        serta menghubungi saya melalui halaman contact.</p>
+            <p>Saya adalah mahasiswa Program Studi Pendidikan Sistem dan Teknologi Informasi, Universitas
+                Pendidikan Indonesia Kampus Daerah Purwakarta, yang sedang belajar pengembangan web.
+                Website ini dibuat sebagai tugas mata kuliah Pemrograman Internet, sekarang sudah menggunakan CSS.
+            </p>
 
-    <h2>Yang Sedang Saya Pelajari</h2>
-    <ul id="list-belajar">
-        <li>HTML</li>
-        <li>Algoritma Pemrograman</li>
-        <li>Basis Data</li>
-        <li>Git dan GitHub</li>
-    </ul>
+            <p>Di website ini, Anda dapat mengenal saya lebih dekat, melihat beberapa project yang pernah saya
+                kerjakan, serta menghubungi saya melalui halaman contact.</p>
+        </section>
 
-    <button id="btn-highlight">Highlight List</button>
+        <section class="skills-section">
+            <h2>Yang Sedang Saya Pelajari</h2>
+            <ul id="list-belajar">
+                <li class="skill-item">HTML</li>
+                <li class="skill-item">Algoritma Pemrograman</li>
+                <li class="skill-item">Basis Data</li>
+                <li class="skill-item">Git dan GitHub</li>
+            </ul>
 
-    <p>Silakan kunjungi halaman <a href="about.html">About</a> untuk mengetahui profil saya lebih lengkap.</p>
+            <button id="btn-highlight">Highlight List</button>
+        </section>
 
-    <hr>
-    <p>&copy; 2026 Ovel. Dibuat menggunakan HTML.</p>
+        <p>Silakan kunjungi halaman <a href="about.html" class="text-link">About</a> untuk mengetahui profil saya
+            lebih lengkap.</p>
+
+        <hr>
+        <footer>
+            <p>&copy; 2026 Ovel. Dibuat menggunakan HTML & CSS.</p>
+        </footer>
+
+    </div>
 </body>
 
 </html>

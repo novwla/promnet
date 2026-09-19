@@ -3,77 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website - About</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>About Me</h1>
+    <div class="container">
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="project.html">Project</a> |
-        <a href="kontak.html">Contact</a>
-    </nav>
+        <header>
+            <h1>About Me</h1>
+        </header>
 
-    <hr>
+        <nav class="navbar">
+            <a href="01-tugas.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="kontak.html" class="nav-link">Contact</a>
+        </nav>
 
-    <h2>Profil Singkat</h2>
-    <p>Nama saya Novela andauri yang biasa di panggil ovel oleh teman-teman saya. Saya adalah mahasiswa Program Studi
-        Pendidikan Sistem dan teknologi informasi di universitas pendidikan indonesia yang memiliki ketertarikan pada
-        bidang web development dan teknologi informasi. doakan saya menjadi engineering! lalu hobi saya membaca novel
-        dan mendengarkan music, saya jjuga suka matcha dan makan(asal gak basi ak makan apapun itu)
+        <hr>
 
-    <p>Saat ini saya sedang belajar membuat website menggunakan HTML dasar,
-        contohnya ini yang saya buat</p>
+        <section>
+            <h2>Profil Singkat</h2>
+            <p>Nama saya Novela Andauri yang biasa dipanggil Ovel oleh teman-teman saya. Saya adalah mahasiswa
+                Program Studi Pendidikan Sistem dan Teknologi Informasi di Universitas Pendidikan Indonesia yang
+                memiliki ketertarikan pada bidang web development dan teknologi informasi. Doakan saya menjadi
+                engineer! Hobi saya membaca novel dan mendengarkan musik, saya juga suka matcha dan makan (asal gak
+                basi, saya makan apapun itu).</p>
 
-    <h2>Data Diriqu</h2>
-    <table border=" 1" cellpadding="5">
-            <tr>
-                <th>Data</th>
-                <th>Keterangan</th>
-            </tr>
-            <tr>
-                <td>Nama</td>
-                <td>Novela Andauri</td>
-            </tr>
-            <tr>
-                <td>Program Studi</td>
-                <td>Pendidikan Sistem dan Teknologi Informasi</td>
-            </tr>
-            <tr>
-                <td>Kampus</td>
-                <td>UPI Kampus Daerah Purwakarta</td>
-            </tr>
-            <tr>
-                <td>Semester</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>novelaandauri@students.upi.edu</td>
-            </tr>
+            <p>Saat ini saya sedang belajar membuat website menggunakan HTML dan CSS, contohnya seperti website
+                ini.</p>
+        </section>
+
+        <section>
+            <h2>Data Diriqu</h2>
+            <table class="data-table">
+                <tr>
+                    <th>Data</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>Novela Andauri</td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>Pendidikan Sistem dan Teknologi Informasi</td>
+                </tr>
+                <tr>
+                    <td>Kampus</td>
+                    <td>UPI Kampus Daerah Purwakarta</td>
+                </tr>
+                <tr>
+                    <td>Semester</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>novelaandauri@students.upi.edu</td>
+                </tr>
             </table>
+        </section>
 
+        <section>
             <h2>Hobi</h2>
-            <ul>
-                <li>Menulis cerita fiksi (kena block writer iya)</li>
-                <li>Mengikuti kegiatan organisasi kampus</li>
-                <li>Membaca</li>
-                <li>Menonton film (psikopet)</li>
+            <ul class="chip-list">
+                <li class="chip">Menulis cerita fiksi (kena block writer iya)</li>
+                <li class="chip">Mengikuti kegiatan organisasi kampus</li>
+                <li class="chip">Membaca</li>
+                <li class="chip">Menonton film (psikopet)</li>
             </ul>
+        </section>
 
+        <section>
             <h2>Riwayat Pendidikan</h2>
-            <ul>
+            <ul class="timeline-list">
                 <li>SDN 1 Hegarmanah - 2014</li>
-                <li>MTS MAI Purwakarta- 2017</li>
-                <li>SMKN 2 Purwakarta- 2020</li>
+                <li>MTS MAI Purwakarta - 2017</li>
+                <li>SMKN 2 Purwakarta - 2020</li>
                 <li>Universitas Pendidikan Indonesia - Sekarang</li>
             </ul>
+        </section>
 
-            <hr>
-            <p><a href="index.html">Kembali ke Home</a></p>
+        <p><a href="01-tugas.html" class="text-link">Kembali ke Home</a></p>
+
+        <hr>
+        <footer>
             <p>&copy; 2026 Ovel.</p>
+        </footer>
+
+    </div>
 </body>
 
 </html>

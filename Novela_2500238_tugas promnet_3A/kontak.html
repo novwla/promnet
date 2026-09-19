@@ -3,86 +3,266 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website - Contact</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f7f3ef;
+            color: #3b3b3b;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(700px, 92%);
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 30px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+        }
+
+        h1,
+        h2 {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            color: #7a4b3a;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            border-left: 4px solid #d98e73;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7a4b3a;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #d98e73;
+            color: #fff;
+        }
+
+        p a {
+            color: #d98e73;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        p a:hover {
+            color: #7a4b3a;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 15px 0;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid #eadbcf;
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #d98e73;
+            outline: none;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        input[type="submit"] {
+            background-color: #7a4b3a;
+            color: #fff;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5c3527;
+            transform: scale(1.05);
+        }
+
+        input[type="reset"] {
+            background-color: #eee;
+            color: #555;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #ddd;
+        }
+
+        #footer-copy {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        #status-msg {
+            display: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+
+        #status-msg.sukses {
+            display: block;
+            background-color: #e3f3e1;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+        }
+
+        #status-msg.gagal {
+            display: block;
+            background-color: #fdecea;
+            color: #b3261e;
+            border: 1px solid #f5c2bf;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Contact Me</h1>
+    <div class="container">
+        <h1>Contact Me</h1>
 
-    <nav>
-        <a href="01-tugas.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="project.html">Project</a> |
-        <a href="kontak.html">Contact</a>
-    </nav>
+        <nav>
+            <a href="01-tugas.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
 
-    <hr>
+        <hr>
 
-    <h2>Informasi Kontak</h2>
-    <p>Jika Anda ingin berdiskusi atau bekerja sama, calling-calling & sebagainya, silakan hubungi saya melalui form
-        berikut.</p>
-    <p> atau cari saya di media sosial:
-        <a href="https://www.instagram.com/rvelovel/" target="_blank">Instagram</a> |
-        <a href="https://www.linkedin.com/in/novela-andauri-2b0b1b1b3/" target="_blank">LinkedIn</a>
+        <h2>Informasi Kontak</h2>
+        <p>Jika Anda ingin berdiskusi atau bekerja sama, calling-calling & sebagainya, silakan hubungi saya melalui
+            form berikut.</p>
+        <p>Atau cari saya di media sosial:
+            <a href="https://www.instagram.com/rvelovel/" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/in/novela-andauri-2b0b1b1b3/" target="_blank">LinkedIn</a>
+        </p>
+        <p>Anda juga dapat mengirim email ke
+            <a href="mailto:novelaandauri@student.upi.edu">novelaandauri@student.upi.edu</a>
+        </p>
 
-    </p>
-    <p>Anda juga dapat mengirim email ke <a
-            href="mailto:novelaandauri@student.upi.edu">novelaandauri@student.upi.edu</a>
-    </p>
+        <h2>Form Pesan</h2>
 
+        <p id="status-msg"></p>
 
-    <h2>Form Pesan</h2>
+        <form action="simpan.php" method="POST">
+            <table>
+                <tr>
+                    <td>Nama :</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>No. Telepon :</td>
+                    <td><input type="text" name="telepon"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin :</td>
+                    <td>
+                        <input type="radio" name="jk" value="L"> Laki-laki
+                        <input type="radio" name="jk" value="P"> Perempuan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Topik :</td>
+                    <td>
+                        <select name="topik">
+                            <option value="diskusi">Diskusi</option>
+                            <option value="kerjasama">Kerja Sama</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pesan :</td>
+                    <td><textarea name="pesan" rows="5" cols="33"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Kirim Pesan">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
 
-    <form>
-        <table border="1" cellpadding="5">
-            <tr>
-                <td>Nama :</td>
-                <td><input type="text" name="nama"></td>
-            </tr>
-            <tr>
-                <td>Email :</td>
-                <td><input type="email" name="email"></td>
-            </tr>
-            <tr>
-                <td>No. Telepon :</td>
-                <td><input type="text" name="telepon"></td>
-            </tr>
-            <tr>
-                <td>Jenis Kelamin :</td>
-                <td>
-                    <input type="radio" name="jk" value="L">Laki-laki
-                    <input type="radio" name="jk" value="P">Perempuan
-                </td>
-            </tr>
-            <tr>
-                <td>Topik :</td>
-                <td>
-                    <select name="topik">
-                        <option value="diskusi">Diskusi</option>
-                        <option value="kerjasama">Kerja Sama</option>
-                        <option value="lainnya">Lainnya</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>Pesan :</td>
-                <td><textarea name="pesan" rows="5" cols="33"></textarea></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Kirim Pesan">
-                    <input type="reset" value="Reset">
-                </td>
-            </tr>
-        </table>
-    </form>
+        <p><i>Catatan: karena website ini hanya menggunakan HTML, form belum terhubung ke server/database, santai
+                bae.</i></p>
 
-    <p><i>Catatan: karena website ini hanya menggunakan HTML, form belum terhubung ke server/database, santai bae.</i>
-    </p>
+        <hr>
+        <p><a href="01-tugas.html">Kembali ke Home</a></p>
+        <p id="footer-copy">&copy; 2026 Ovel.</p>
+    </div>
 
-    <hr>
-    <p><a href="01-tugas.html">Kembali ke Home</a></p>
-    <p>&copy; 2026 Ovel.</p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const status = params.get("status");
+        const statusMsg = document.getElementById("status-msg");
+
+        if (status === "sukses") {
+            statusMsg.textContent = "Pesan berhasil dikirim, terima kasih!";
+            statusMsg.classList.add("sukses");
+        } else if (status === "gagal") {
+            statusMsg.textContent = "Waduh, pesan gagal dikirim. Coba lagi ya.";
+            statusMsg.classList.add("gagal");
+        }
+    </script>
 </body>
 
 </html>

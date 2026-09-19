@@ -3,76 +3,244 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website - Project</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f7f3ef;
+            color: #3b3b3b;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(700px, 92%);
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 30px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+        }
+
+        h1,
+        h2 {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            color: #7a4b3a;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            border-left: 4px solid #d98e73;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: #4a4a4a;
+        }
+
+        /* Navbar pakai flexbox */
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #7a4b3a;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #d98e73;
+            color: #fff;
+        }
+
+        p a {
+            color: #d98e73;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        p a:hover {
+            color: #7a4b3a;
+        }
+
+        /* Foto project: box model (border+padding+margin) + width & height */
+        .project-img {
+            width: 240px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #d98e73;
+            padding: 4px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        /* Setiap project dibungkus jadi card */
+        .project-card {
+            background-color: #faf6f2;
+            border: 1px solid #eadbcf;
+            border-radius: 10px;
+            padding: 15px 20px;
+            margin: 15px 0;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #7a4b3a;
+        }
+
+        /* List teknologi pakai flexbox jadi chip */
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+
+        .tech-list li {
+            background-color: #f1e4dc;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: transform 0.25s ease, background-color 0.25s ease;
+        }
+
+        .tech-list li:hover {
+            background-color: #d98e73;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 15px 0;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #d98e73;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f1e4dc;
+            color: #7a4b3a;
+        }
+
+        #footer-copy {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>My Projects</h1>
+    <div class="container">
+        <h1>My Projects</h1>
 
-    <nav>
-        <a href="01-tugas.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="project.html">Project</a> |
-        <a href="kontak.html">Contact</a>
-    </nav>
+        <nav>
+            <a href="01-tugas.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="project.html">Project</a>
+            <a href="kontak.html">Contact</a>
+        </nav>
 
-    <hr>
+        <hr>
 
-    <h2>Daftar Project</h2>
-    <p>Berikut adalah beberapa project sederhana yang pernah saya kerjakan selama di smk dan di semester 1-3.</p>
+        <h2>Daftar Project</h2>
+        <p>Berikut adalah beberapa project sederhana yang pernah saya kerjakan selama di SMK dan di semester 1-3.</p>
 
-    <img src="../assets/image.jpg" alt="projek ui/ux" width="240">
+        <img src="../assets/image.jpg" alt="projek ui/ux" class="project-img">
 
-    <h3>Project 1: Website Biodata</h3>
-    <p>Website sederhana untuk menampilkan biodata pribadi menggunakan HTML.</p>
+        <div class="project-card">
+            <h3>Project 1: Website Biodata</h3>
+            <p>Website sederhana untuk menampilkan biodata pribadi menggunakan HTML.</p>
+        </div>
 
-    <h3>Project 2: Program Kasir Sederhana</h3>
-    <p>Program untuk menghitung total belanja, diskon, dan pembayaran pelanggan.</p>
+        <div class="project-card">
+            <h3>Project 2: Program Kasir Sederhana</h3>
+            <p>Program untuk menghitung total belanja, diskon, dan pembayaran pelanggan.</p>
+        </div>
 
-    <h3>Project 3: Design UI/UX Website Pariwisata dengan menggunakan figma</h3>
-    <p>Project latihan untuk menyimpan dan menampilkan data mahasiswa menggunakan tabel.</p>
+        <div class="project-card">
+            <h3>Project 3: Design UI/UX Website Pariwisata dengan menggunakan Figma</h3>
+            <p>Project latihan untuk menyimpan dan menampilkan data mahasiswa menggunakan tabel.</p>
+        </div>
 
-    <h2>Teknologi yang Digunakan</h2>
-    <ul>
-        <li>HTML</li>
-        <li>Python</li>
-        <li>MySQL</li>
-        <li>Git</li>
-    </ul>
+        <h2>Teknologi yang Digunakan</h2>
+        <ul class="tech-list">
+            <li>HTML</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Laravel</li>
+        </ul>
 
-    <h2>Ringkasan Project</h2>
-    <table border="1" cellpadding="5">
-        <tr>
-            <th>No.</th>
-            <th>Nama Project</th>
-            <th>Teknologi</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Website Biodata</td>
-            <td>HTML</td>
-            <td>Selesai</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Program Kasir</td>
-            <td>Python</td>
-            <td>Selesai</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>ui/ux website pariwisata</td>
-            <td>figma</td>
-            <td>selesai</td>
-        </tr>
-    </table>
+        <h2>Ringkasan Project</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Nama Project</th>
+                <th>Teknologi</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Website Biodata</td>
+                <td>HTML</td>
+                <td>Selesai</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Program Kasir</td>
+                <td>Python</td>
+                <td>Selesai</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>UI/UX Website Pariwisata</td>
+                <td>Figma</td>
+                <td>Selesai</td>
+            </tr>
+        </table>
 
-    <p>gtau lah apalagi, lupa</p>
+        <p>gtau lah apalagi, lupa</p>
 
-    <hr>
-    <p><a href="01-tugas.html">Kembali ke Home</a></p>
-    <p>&copy; 2026 Ovel.</p>
+        <hr>
+        <p><a href="01-tugas.html">Kembali ke Home</a></p>
+        <p id="footer-copy">&copy; 2026 Ovel.</p>
+    </div>
 </body>
 
 </html>

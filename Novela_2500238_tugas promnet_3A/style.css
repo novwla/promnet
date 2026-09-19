@@ -1,54 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f4f4;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f7f3ef;
+    color: #3b3b3b;
+    line-height: 1.6;
+}
+
+h1,
+h2 {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    color: #7a4b3a;
 }
 
 h1 {
+    font-size: 2rem;
     text-align: center;
-    color: #0066cc;
 }
 
-nav {
-    text-align: center;
-    margin: 15px 0;
+h2 {
+    font-size: 1.4rem;
+    border-left: 4px solid #d98e73;
+    padding-left: 10px;
 }
 
-nav a {
+p {
+    font-size: 0.95rem;
+    color: #4a4a4a;
+}
+
+.container {
+    width: min(700px, 92%);
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+
+.nav-link {
     text-decoration: none;
-    color: #333;
-    margin: 0 10px;
+    color: #7a4b3a;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover {
-    color: #0066cc;
-    font-weight: bold;
+.nav-link:hover {
+    background-color: #d98e73;
+    color: #fff;
 }
 
-img {
+.profile-section {
+    text-align: center;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #d98e73;
+    padding: 4px;
+    margin: 15px auto;
     display: block;
-    margin: 10px auto;
-    border-radius: 8px;
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    animation: fadeIn 1.2s ease-in;
 }
 
-button {
+#list-belajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.skill-item {
+    background-color: #f1e4dc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.skill-item:hover {
+    background-color: #d98e73;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+#list-belajar.highlight .skill-item {
+    background-color: #f6c453;
+    color: #3b3b3b;
+}
+
+/* ================================
+   BUTTON (ID selector + hover/transition)
+================================= */
+#btn-highlight {
     display: block;
-    margin: 20px auto;
-    padding: 10px 15px;
-    background: #0066cc;
+    margin: 10px auto 0;
+    padding: 10px 22px;
+    background-color: #7a4b3a;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 0.95rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background: #004c99;
+#btn-highlight:hover {
+    background-color: #5c3527;
+    transform: scale(1.05);
 }
 
-.highlight {
-    background-color: yellow;
-    font-weight: bold;
+/* ================================
+   LINK BIASA DI DALAM TEKS
+================================= */
+.text-link {
+    color: #d98e73;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.text-link:hover {
+    color: #7a4b3a;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* ================================
+   ANIMASI TAMBAHAN (bonus @keyframes)
+================================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
